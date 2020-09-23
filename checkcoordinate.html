@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <div class="container">
+    <img src="https://i.ibb.co/XZFVfJT/image.png" alt="image">
+    <input id="x1" placeholder="x1"/>
+    <input id="y1" placeholder="y1"/>
+    <input id="x2" placeholder="x2"/>
+    <input id="y2" placeholder="y2"/>
+
+    <button id="button">Найти координату</button>
+
+    <span id="span"></span>
+  </div>
+</body>
+</html>
+
+<script>
+const button = document.querySelector('#button')
+const span = document.querySelector('#span')
+const x1 = document.querySelector('#x1')
+const y1 = document.querySelector('#y1')
+const x2 = document.querySelector('#x2')
+const y2 = document.querySelector('#y2')
+
+
+button.addEventListener('click', () => {
+  const k = - (y2.value - y1.value) / (x1.value - x2.value)
+  const b = - (x2.value * y1.value - x1.value * y2.value) / (x1.value - x2.value)
+  span.innerHTML = `Ответ: ${-b/k}`
+})
+</script>
+
+<style>
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+  width: 500px;
+}
+
+.container img {
+  max-width: 500px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  font-size: 16px;
+  color: #fff; 
+  user-select: none;
+  background: rgb(212,75,56);
+  padding: .7em 1.5em;
+  outline: none;
+  border: none;
+}
+
+button:hover { 
+  background: rgb(232,95,76); 
+}
+
+button:active { 
+  background: rgb(152,15,0); 
+} 
+
+span {
+  font-size: 16px;
+}
+</style>
