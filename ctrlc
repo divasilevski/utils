@@ -1,0 +1,548 @@
+finance.vue
+<template lang="pug">
+  .statistics-sections 
+    section
+      BarChart(
+        name="ads"
+        caption="Сумма внесенная на кошельки"
+        :caption-value="new Intl.NumberFormat('ru-RU', { minimumFractionDigits: 0 }).format(results.replenishment.sum) + ' руб.'"
+        :data="replenishmentData"
+        price
+      )
+
+    section
+      BarChart(
+        name="ads"
+        caption="Сумма потраченных денег"
+        :caption-value="new Intl.NumberFormat('ru-RU', { minimumFractionDigits: 0 }).format(results.services_dated.sum) + ' руб.'"
+        :data="adsData"
+        price
+      )
+
+    section
+      PieChart(
+        name="connected"
+        caption="Подключенные услуги"
+        :caption-value="results.services_overall.count"
+        :data="connectedData"
+      )
+</template>
+
+<script>
+import statisticSectionMixin from '~/mixins/statisticSection'
+
+export default {
+  mixins: [statisticSectionMixin],
+  data: () => ({
+    replenishmentData: {},
+    connectedData: {},
+    adsData: {},
+  }),
+  computed: {
+    humanServicesNames() {
+      return this.$store.state.data.humanServicesNames
+    },
+  },
+  created() {
+    this.replenishmentData = this.parseResponse(this.results.replenishment)
+
+    this.adsData = this.parseResponse(this.results.services_dated)
+
+    this.connectedData = {
+      values: this.results.services_overall.data
+        .reverse()
+        .map((el) => el.count),
+      labels: this.results.services_overall.data
+        .reverse()
+        .map((el) => this.humanServicesNames[el.name].shortName),
+      prices: this.results.services_overall.data.reverse().map((el) => el.sum),
+      colors: this.results.services_overall.data
+        .reverse()
+        .map((el) => this.colorDict[el.name]),
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+section {
+  margin-top: 60px;
+}
+</style>
+
+statisticSection.js
+import BarChart from '~/components/Statistics/BarChart'
+import PieChart from '~/components/Statistics/PieChart'
+import Location from '~/components/Statistics/Location'
+
+const monthsSmall = [
+  'янв',
+  'фев',
+  'март',
+  'апр',
+  'май',
+  'июнь',
+  'июль',
+  'авг',
+  'сент',
+  'окт',
+  'ноя',
+  'дек',
+]
+
+const monthsFull = [
+  'Январь',
+  'Февраль',
+  'Март',
+  'Апрель',
+  'Май',
+  'Июнь',
+  'Июль',
+  'Август',
+  'Сентябрь',
+  'Октябрь',
+  'Ноябрь',
+  'Декабрь',
+]
+
+const colorDict = {
+  stopped: '#0D4990',
+  on_verification: '#FF8B00',
+  draft: '#057D9F',
+  archive: '#CA1253',
+
+  moderated: '#0D4990',
+  canceled: '#FF8B00',
+
+  business: '#0D4990',
+  realty: '#FF8B00',
+  land: '#057D9F',
+  equipment: '#CA1253',
+  franchise: '#207E62',
+
+  all_users: '#0D4990',
+  users_with_services: '#FF8B00',
+
+  VIP: '#0D4990',
+  PREMIUM: '#FF8B00',
+  COLORED: '#057D9F',
+  PROMO_FEED: '#CA1253',
+  RAISE: '#207E62',
+  MAIN: '#617FEF',
+  FACEBOOK: '#CD3E8B',
+}
+
+export default {
+  components: {
+    BarChart,
+    PieChart,
+    Location,
+  },
+  props: {
+    results: {
+      type: Object,
+      default: () => {},
+    },
+    range: {
+      type: Object,
+      default: () => {},
+    },
+  },
+  data: () => ({
+    monthsSmall,
+    monthsFull,
+    colorDict,
+  }),
+  methods: {
+    parseResponse(response) {
+      const years = Object.keys(response.data)
+      const firstYear = years[0]
+
+      const months = Object.keys(response.data[firstYear].data)
+      const firstMonth = months[0]
+
+      let [labels, values, dates] = [[], [], []]
+
+      // Определяем период
+      if (years.length > 1) {
+        // YEARS
+        for (const year of years) {
+          labels.push(year)
+          labels.push(
+            ...Object.keys(response.data[year].data).map(
+              (el) => this.monthsSmall[el - 1]
+            )
+          )
+          values.push(null)
+          values.push(
+            ...Object.values(response.data[year].data).map((el) => el.sum)
+          )
+        }
+      } else if (months.length > 3) {
+        // YEAR
+        labels = this.getSeparatedByMonths(this.monthsSmall)
+
+        values = this.getSeparatedByMonths(
+          this.monthsSmall.map((x, n) => {
+            return months.includes(n + '')
+              ? response.data[firstYear].data[n].sum
+              : null
+          })
+        )
+      } else if (months.length > 1) {
+        // MONTHS
+        for (const month of months) {
+          labels.push(this.monthsSmall[month - 1])
+          labels.push(...Object.keys(response.data[firstYear].data[month].data))
+
+          values.push(null)
+          values.push(
+            ...Object.values(response.data[firstYear].data[month].data).map(
+              (el) => el.sum
+            )
+          )
+        }
+      } else {
+        // MONTH
+        const days = Object.keys(response.data[firstYear].data[firstMonth].data)
+
+        labels = this.getDaysByDate(new Date(firstYear, firstMonth - 1, 1))
+
+        values = labels.map((n) =>
+          days.includes(n + '')
+            ? response.data[firstYear].data[firstMonth].data[n].sum
+            : null
+        )
+
+        dates = labels.map((n) => new Date(firstYear, firstMonth - 1, n))
+      }
+
+      return { labels, values, dates }
+    },
+    createArrayByDates(dates, labels, toCompare) {
+      const result = new Array(labels.length)
+      for (let i = 0; i < dates.length; i++) {
+        result[dates[i].getDate() - 1] = toCompare[i]
+      }
+      return result
+    },
+    getLabels() {
+      if (this.range.name === 'MONTH') {
+        return this.getDaysByDate(this.range.from)
+      }
+      if (this.range.name === 'MONTHS') {
+        return this.getMonthsRange()
+      }
+      if (this.range.name === 'YEAR') {
+        return this.getSeparatedByMonths(monthsSmall)
+      }
+      if (this.range.name === 'YEARS') {
+        return this.getYearsRange()
+      }
+    },
+    getDaysByDate(date) {
+      const count =
+        33 - new Date(date.getFullYear(), date.getMonth(), 33).getDate()
+
+      return [...Array(count).keys()].map((i) => i + 1)
+    },
+    getSeparatedByMonths(months) {
+      const m = [...months]
+      m.splice(9, 0, '')
+      m.splice(6, 0, '')
+      m.splice(3, 0, '')
+      return m
+    },
+    getYearsRange() {
+      const startYear = this.range.from.getFullYear()
+      const startMonth = this.range.from.getMonth() + 1
+
+      const endYear = this.range.to.getFullYear()
+      const endMonth = this.range.to.getMonth() + 1
+
+      const yearsArray = [...Array(+endYear - startYear + 1).keys()].map(
+        (el) => el + startYear
+      )
+
+      const monthStartArray = [...Array(12 - startMonth + 1).keys()].map(
+        (el) => el + startMonth
+      )
+      const monthEndArray = [...Array(endMonth + 1).keys()]
+
+      const result = []
+      for (let index = 0; index < yearsArray.length; index++) {
+        result.push(yearsArray[index])
+
+        if (index === 0) {
+          result.push(
+            ...this.monthsSmall.filter((x, i) => monthStartArray.includes(i))
+          )
+        } else if (index === yearsArray.length - 1) {
+          result.push(
+            ...this.monthsSmall.filter((x, i) => monthEndArray.includes(i))
+          )
+        } else {
+          result.push(...this.monthsSmall)
+        }
+      }
+
+      return result
+    },
+
+    getMonthsRange() {
+      const year = this.range.from.getFullYear()
+
+      const monthFrom = this.range.from.getMonth()
+      const monthTo = this.range.to.getMonth()
+
+      const monthArray = [...Array(monthTo - monthFrom + 1).keys()].map(
+        (el) => el + monthFrom
+      )
+
+      const result = []
+      for (let index = 0; index < monthArray.length; index++) {
+        result.push(this.monthsSmall[monthArray[index]])
+        result.push(...this.createWeeks(new Date(year, monthArray[index], 1)))
+      }
+
+      return result
+    },
+
+    createWeeks(date) {
+      let startWeek = date.getDay()
+
+      if (startWeek === 0) startWeek = 7
+
+      const count =
+        33 -
+        new Date(
+          this.range.from.getFullYear(),
+          this.range.from.getMonth(),
+          33
+        ).getDate()
+
+      const results = []
+      console.log(startWeek)
+      results.push(`${1}-${8 - startWeek}`)
+
+      startWeek = 8 - startWeek
+      while (startWeek < count - 7) {
+        results.push(`${startWeek + 1}-${startWeek + 7}`)
+        startWeek = startWeek + 7
+      }
+      results.push(`${startWeek + 1}-${count}`)
+
+      return results
+    },
+
+    calculateInterestByValues(values) {
+      return values.map((el, i) => {
+        if (i) {
+          const sgn = values[i - 1] > values[i] ? -1 : 1
+          const formula =
+            (Math.abs(values[i - 1] - values[i]) /
+              ((values[i - 1] + values[i]) / 2)) *
+            100
+          return Math.floor(sgn * formula)
+        } else {
+          return null
+        }
+      })
+    },
+  },
+}
+
+barChart.vue
+<template lang="pug">
+  .chart.chart_bar
+    .space-between.space-between_bold
+      .space-between__title {{ caption }}
+      .space-between__value {{ captionValue }}
+    
+    .chart-legend(v-if="data.services")
+      .chart-legend__item
+        .chart-legend__color(style="background: #0D4990;")
+        .chart-legend__title Без подключенных услуг
+      .chart-legend__item
+        .chart-legend__color(style="background: #FD9F09;")
+        .chart-legend__title С подключенными услугами
+
+
+    .chart-content
+      canvas(:name="name" width="840" height="370")
+
+    .chart__bottom-block
+      div(v-for="(x, index) in data.values" :key="x + ' ' + data.labels[index]")
+        .space-between(v-if="x")
+          .space-between__title {{ data.dates.length > 0 ?  dateFilter(data.dates[index]) : data.labels[index] }}
+          .space-between__value {{ valueFilter(data.values[index]) }}
+
+    .hover-tooltip
+      h3(v-if="data.dates.length > 0") {{ dateFilter(data.dates[tooltipIndex]) }}
+      h3(v-else) {{data.labels[tooltipIndex] }}
+      p {{ valueFilter(tooltipText) }} {{ keyWord }}
+        template(v-if="data.interest && data.interest[tooltipIndex]")
+          span( v-if="data.interest[tooltipIndex] >0 " style="color: #FD9F09 ;") &nbsp;(+{{ data.interest[tooltipIndex] }}%)
+          span(v-else style="color: #EB5757;") &nbsp;({{ data.interest[tooltipIndex] }}%)
+
+      template(v-if="data.services && data.services[tooltipIndex]")
+        h3 Подключенные услуги
+        span(v-for="service in data.services[tooltipIndex]")
+          svg-icon( :name="`services/${service.toLowerCase() || ''}`")
+
+      template(v-if="data.servicesMore && data.servicesMore[tooltipIndex]")
+        br
+        div(v-for="service in data.servicesMore[tooltipIndex]")
+          span(style="color: #7C7D7E;") {{ service.name }}&nbsp;
+          span {{ valueFilter(service.sum) }} 
+
+</template>
+
+<script>
+import Chart from 'chart.js'
+import { notEmpty } from '~/assets/js/validators'
+
+export default {
+  props: {
+    name: {
+      type: String,
+      default: '',
+    },
+    caption: {
+      type: String,
+      default: '',
+    },
+    captionValue: {
+      type: [String, Number],
+      default: '',
+    },
+    data: {
+      type: Object,
+      default: () => {},
+    },
+    keyWord: {
+      type: String,
+      default: '',
+    },
+    withInterest: {
+      type: Boolean,
+      default: false,
+    },
+    price: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  data: () => ({
+    tooltipIndex: 0,
+    tooltipText: '',
+  }),
+  mounted() {
+    const context = this.$el.getElementsByTagName('canvas')[0].getContext('2d')
+    const tooltipEl = this.$el.getElementsByClassName('hover-tooltip')[0]
+
+    function onMouseMove(event) {
+      tooltipEl.style.left = event.pageX + 10 + 'px'
+      tooltipEl.style.top = event.pageY + 25 + 'px'
+    }
+
+    const myChart = new Chart(context, {
+      type: 'bar',
+      data: {
+        labels: this.data.labels,
+        datasets: [
+          {
+            data: this.data.values,
+            backgroundColor: this.data.colors || '#384C7F',
+            // hoverBackgroundColor: this.data.colors || '#384C7F',
+            barPercentage: 0.98,
+            categoryPercentage: 0.98,
+          },
+        ],
+      },
+      options: {
+        legend: {
+          display: false,
+        },
+        hover: {
+          onHover(e) {
+            const point = this.getElementAtEvent(e)
+            if (point.length) e.target.style.cursor = 'pointer'
+            else e.target.style.cursor = 'default'
+          },
+        },
+        scales: {
+          yAxes: [
+            {
+              color: '#F2F2F2',
+              ticks: {
+                fontColor: '#B3B3B3',
+                beginAtZero: true,
+              },
+              gridLines: {
+                color: '#F2F2F2',
+              },
+            },
+          ],
+          xAxes: [
+            {
+              color: '#F2F2F2',
+              ticks: {
+                fontColor: '#B3B3B3',
+              },
+              gridLines: {
+                color: '#F2F2F2',
+                display: false,
+              },
+            },
+          ],
+        },
+        tooltips: {
+          enabled: false,
+          bodyAlign: 'center',
+          custom: (tooltipModel) => {
+            if (tooltipModel.opacity === 0) {
+              tooltipEl.style.display = 'none'
+              removeEventListener('mousemove', onMouseMove, false)
+              return
+            } else {
+              this.tooltipIndex = this.data.labels
+                .map((el) => el + '')
+                .indexOf(tooltipModel.title[0])
+              this.tooltipText = tooltipModel.body[0].lines[0]
+              tooltipEl.style.display = 'block'
+            }
+
+            tooltipEl.style.position = 'absolute'
+
+            addEventListener('mousemove', onMouseMove, false)
+          },
+        },
+      },
+    })
+  },
+  methods: {
+    dateFilter(date) {
+      return new Date(date)
+        .toLocaleString('ru-RU', {
+          timeZone: 'UTC',
+          month: 'long',
+          day: 'numeric',
+          year: 'numeric',
+        })
+        .slice(0, -3)
+    },
+    valueFilter(value) {
+      if (this.price) {
+        value =
+          new Intl.NumberFormat('ru-RU', {
+            minimumFractionDigits: 0,
+          }).format(value) + ' руб.'
+      }
+      return value
+    },
+  },
+}
+</script>
+
+<style lang="scss" src="./index.scss"></style>
