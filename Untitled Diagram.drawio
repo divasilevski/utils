@@ -1,1 +1,265 @@
-<mxfile host="app.diagrams.net" modified="2021-01-12T19:58:42.986Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="Dq6b5G_lNmEVKiqBdiTQ" version="14.1.9" type="github"><diagram id="Z8GysMqbn9yRyXE1TJqG" name="Page-1">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</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-12T21:16:34.169Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="Bb6nw_ckUgHxKmlP8_48" version="14.1.9" type="github">
+  <diagram id="Z8GysMqbn9yRyXE1TJqG" name="Page-1">
+    <mxGraphModel dx="1692" dy="1652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-25" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="537" y="408" width="155" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-2" value="Ошибка валидации полей" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="450" y="-40" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-3" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="CHKYId3VDMZ3tz6TOn7Y-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="110" as="sourcePoint" />
+            <mxPoint x="280" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-5" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="CHKYId3VDMZ3tz6TOn7Y-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="110" as="sourcePoint" />
+            <mxPoint x="550" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-6" value="Добавляется лишнее поле" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="450" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-8" value="Одно из полей не валидно" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="300" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="CHKYId3VDMZ3tz6TOn7Y-9" target="CHKYId3VDMZ3tz6TOn7Y-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-9" value="Инпут с ошибкой не подсвечивается" style="rect;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="270" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="CHKYId3VDMZ3tz6TOn7Y-8" target="CHKYId3VDMZ3tz6TOn7Y-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="270" as="sourcePoint" />
+            <mxPoint x="440" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="CHKYId3VDMZ3tz6TOn7Y-11" target="CHKYId3VDMZ3tz6TOn7Y-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-11" value="Поле заполняется автоматически и скрыто в коде" style="rect;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="270" width="129" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-13" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="CHKYId3VDMZ3tz6TOn7Y-8" target="CHKYId3VDMZ3tz6TOn7Y-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="270" as="sourcePoint" />
+            <mxPoint x="440" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-18" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;city_id&lt;/div&gt;&lt;/div&gt;" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="193.86" y="380" width="142.27" height="97.75" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-19" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;with_curator&lt;/div&gt;" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="346.02" y="380" width="135.96" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-27" value="USER" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="-40" width="100" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-30" value="&lt;h1 class=&quot;text-break&quot; style=&quot;box-sizing: border-box ; margin-top: 0px ; margin-bottom: 0.5rem ; font-weight: 500 ; line-height: 1.2 ; font-size: 2.2rem ; color: rgb(33 , 37 , 41) ; text-align: left ; word-break: break-word ; overflow-wrap: break-word&quot;&gt;The given data was invalid.&lt;/h1&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="-40" width="580" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-36" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/new-year-s-hand-drawn-basic/64/question_mark-128.png;rotation=10;" parent="1" vertex="1">
+          <mxGeometry x="504" y="160" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-40" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/nasty/60/middle_finger_gesture_fuck-128.png" parent="1" vertex="1">
+          <mxGeometry x="110" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-41" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/emoji-18/61/6-128.png" parent="1" vertex="1">
+          <mxGeometry x="56" y="-37" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-42" value="false (start)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="450" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-44" value="null&lt;br&gt;(start)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="210" y="450" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-47" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/geosm-e-commerce/48/edit-128.png" parent="1" vertex="1">
+          <mxGeometry x="160" y="408.88" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-48" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="CHKYId3VDMZ3tz6TOn7Y-52" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="130" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-49" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="CHKYId3VDMZ3tz6TOn7Y-51" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="130" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-50" value="can change" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="380" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-51" value="mounted &lt;br&gt;hook" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-52" value="user&lt;br&gt;interact" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="328.88" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-53" value="&lt;font color=&quot;#ff0505&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Ошибка, если хук вообще не сработает&lt;/i&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="495" width="86" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-54" value="При нажатии пользователя" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="44" y="300" width="86" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-58" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" parent="1" vertex="1">
+          <mxGeometry x="450" y="450" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-61" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" parent="1" vertex="1">
+          <mxGeometry x="20" y="350" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-62" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" parent="1" vertex="1">
+          <mxGeometry x="16" y="446" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-21" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.watcher_node;" vertex="1" parent="1">
+          <mxGeometry x="588.5" y="490" width="52" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-23" value="Watcher cidy_id&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="564.5" y="420" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-29" value="Костыль для watcher city_id:&lt;br&gt;immediate: true,&lt;br&gt;handler() {do sthg}" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="554" width="138" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-32" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="CHKYId3VDMZ3tz6TOn7Y-51">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="550" as="sourcePoint" />
+            <mxPoint x="70" y="496" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-33" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519660-164_QuestionMark-128.png" vertex="1" parent="1">
+          <mxGeometry x="79" y="538" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-38" value="" style="endArrow=classic;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-39" target="CHKYId3VDMZ3tz6TOn7Y-51">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="195" y="510" as="sourcePoint" />
+            <mxPoint x="400" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-39" value="VUEX&lt;br&gt;getter&lt;br&gt;getUserCityId" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="344" y="505" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-41" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.4;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-42" target="G7fBXbVgxk_kWN4zUxZF-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="315" y="620" as="sourcePoint" />
+            <mxPoint x="400" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-42" value="localStorage" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="361.98" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-46" value="&lt;b&gt;undefined&lt;/b&gt;: &lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;У пользователя не выбран город в настройках&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;или пользователь ещё не загрузился&lt;/font&gt;&lt;/i&gt;&lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;br&gt;и пользователь никогда не выбирал город&amp;nbsp;&lt;br&gt;(&lt;font color=&quot;#ff0505&quot;&gt;Ошибка если не сработает watcher&lt;/font&gt;)&lt;br&gt;&lt;/font&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="495" width="160" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-48" value="&lt;b&gt;id&lt;/b&gt;: &lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;У пользователя выбран город в настройках или пользователь выбирал город&lt;/font&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="600" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-51" value="Предпочтение у cityId" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="670" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-52" value="" style="endArrow=classic;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="G7fBXbVgxk_kWN4zUxZF-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="610" as="sourcePoint" />
+            <mxPoint x="400" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-53" value="server" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="452" y="595" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-54" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="306" y="505" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-56" value="Вотчер может не сработать если в переменную положить одно и тоже значение или переопределить его" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-72" y="675" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-57" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="650" as="sourcePoint" />
+            <mxPoint x="160" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-58" value="" style="endArrow=classic;html=1;fontSize=10;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-25" target="G7fBXbVgxk_kWN4zUxZF-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="460" as="sourcePoint" />
+            <mxPoint x="620" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-59" value="Может попасть:&lt;br&gt;&lt;b style=&quot;font-size: 12px&quot;&gt;undefined &lt;/b&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;или&lt;/font&gt;&lt;b style=&quot;font-size: 12px&quot;&gt; id&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="554.5" y="450" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-63" value="Инициализация приложения" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;double=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="800" width="97" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-64" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-63">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="870" as="sourcePoint" />
+            <mxPoint x="120" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-65" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-63">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="61.5" y="860" as="sourcePoint" />
+            <mxPoint x="120" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-66" value="localStorage" style="triangle;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="750" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-67" value="server" style="triangle;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="850" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-68" value="Данные поступают в VUEX" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="780" width="80" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-70" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-66">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="780" as="sourcePoint" />
+            <mxPoint x="250" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-71" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-67">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="780" as="sourcePoint" />
+            <mxPoint x="250" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-72" value="Переменная city_id содержит 100% тоже что и форма для выбора города" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="230" y="750" width="164" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-73" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 10px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;мгновенно&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="145" y="810" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-74" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;font face=&quot;helvetica&quot;&gt;нужно,&lt;br&gt;время&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="910" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-75" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" vertex="1" parent="1">
+          <mxGeometry x="370" y="780" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-76" value="В теории при медленном интернете и когда пользователь не добавлен в localStorage, но город выбран!. Кстати при регистрации может город автоматически выбраться???&lt;br&gt;&lt;br&gt;Переменная city_id может прийти undefined в mounted().&amp;nbsp;&lt;br&gt;Она вызовет watcher чтобы поставить cityId в vuex на undefined. &lt;br&gt;И только после этого придет ответ с сервера и объект настроек пользователя. Где существует город. Форма поменяется на это значение, так как cityId undefined и прочтется город выбранный в настройках пользователя ." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="242.98" y="830" width="358" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-77" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/new-year-s-hand-drawn-basic/64/question_mark-128.png;rotation=25;" vertex="1" parent="1">
+          <mxGeometry x="77" y="646" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-78" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="572" y="860" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-79" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="582" y="870" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-80" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="592" y="880" width="44" height="44" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
