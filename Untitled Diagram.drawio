@@ -1,10 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2021-01-12T21:16:34.169Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="Bb6nw_ckUgHxKmlP8_48" version="14.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-13T08:51:30.765Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="358CL-X7pv3B0bxPXMrF" version="14.1.9" type="github">
   <diagram id="Z8GysMqbn9yRyXE1TJqG" name="Page-1">
-    <mxGraphModel dx="1692" dy="1652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="2042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-25" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="_h8ZHte26619VJgfa5wt-58" value="&lt;span style=&quot;font-size: 12px&quot;&gt;Другое устройство,&lt;br&gt;другой браузер,&lt;br&gt;очищена история &lt;br&gt;браузера&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#000000;fillColor=#ffffff;gradientColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="226.13" y="970" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-25" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="537" y="408" width="155" height="155" as="geometry" />
         </mxCell>
         <mxCell id="CHKYId3VDMZ3tz6TOn7Y-2" value="Ошибка валидации полей" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -67,9 +70,6 @@
         <mxCell id="CHKYId3VDMZ3tz6TOn7Y-36" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/new-year-s-hand-drawn-basic/64/question_mark-128.png;rotation=10;" parent="1" vertex="1">
           <mxGeometry x="504" y="160" width="68" height="68" as="geometry" />
         </mxCell>
-        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-40" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/nasty/60/middle_finger_gesture_fuck-128.png" parent="1" vertex="1">
-          <mxGeometry x="110" width="40" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="CHKYId3VDMZ3tz6TOn7Y-41" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/emoji-18/61/6-128.png" parent="1" vertex="1">
           <mxGeometry x="56" y="-37" width="48" height="48" as="geometry" />
         </mxCell>
@@ -103,7 +103,7 @@
         <mxCell id="CHKYId3VDMZ3tz6TOn7Y-52" value="user&lt;br&gt;interact" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="328.88" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-53" value="&lt;font color=&quot;#ff0505&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Ошибка, если хук вообще не сработает&lt;/i&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+        <mxCell id="CHKYId3VDMZ3tz6TOn7Y-53" value="&lt;font color=&quot;#ff0505&quot; style=&quot;font-size: 10px&quot;&gt;&lt;i style=&quot;font-size: 10px&quot;&gt;Ошибка если хук не сработает&lt;/i&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
           <mxGeometry x="-40" y="495" width="86" height="20" as="geometry" />
         </mxCell>
         <mxCell id="CHKYId3VDMZ3tz6TOn7Y-54" value="При нажатии пользователя" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -118,25 +118,22 @@
         <mxCell id="CHKYId3VDMZ3tz6TOn7Y-62" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" parent="1" vertex="1">
           <mxGeometry x="16" y="446" width="44" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-21" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.watcher_node;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-21" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.watcher_node;" parent="1" vertex="1">
           <mxGeometry x="588.5" y="490" width="52" height="56" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-23" value="Watcher cidy_id&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-23" value="Watcher cidy_id&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="564.5" y="420" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-29" value="Костыль для watcher city_id:&lt;br&gt;immediate: true,&lt;br&gt;handler() {do sthg}" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="554" width="138" height="66" as="geometry" />
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-29" value="Недочет - watcher cityId:&lt;br&gt;immediate: true,&lt;br&gt;handler() {do sthg}&lt;br&gt;&lt;font color=&quot;#ff0810&quot;&gt;не дописан 1 watcher!!!!&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="554" width="198" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-32" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="CHKYId3VDMZ3tz6TOn7Y-51">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-32" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" target="CHKYId3VDMZ3tz6TOn7Y-51" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="40" y="550" as="sourcePoint" />
             <mxPoint x="70" y="496" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-33" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519660-164_QuestionMark-128.png" vertex="1" parent="1">
-          <mxGeometry x="79" y="538" width="25" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-38" value="" style="endArrow=classic;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-39" target="CHKYId3VDMZ3tz6TOn7Y-51">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-38" value="" style="endArrow=classic;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="G7fBXbVgxk_kWN4zUxZF-39" target="CHKYId3VDMZ3tz6TOn7Y-51" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="195" y="510" as="sourcePoint" />
             <mxPoint x="400" y="420" as="targetPoint" />
@@ -145,119 +142,226 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-39" value="VUEX&lt;br&gt;getter&lt;br&gt;getUserCityId" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="344" y="505" width="130" height="110" as="geometry" />
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-39" value="VUEX&lt;br&gt;getter&lt;br&gt;getUserCityId" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="344" y="505" width="136" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-41" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.4;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-42" target="G7fBXbVgxk_kWN4zUxZF-39">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-41" value="" style="endArrow=classic;html=1;entryX=0.618;entryY=0.936;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="315" y="620" as="sourcePoint" />
-            <mxPoint x="400" y="650" as="targetPoint" />
+            <mxPoint x="422" y="960" as="sourcePoint" />
+            <mxPoint x="422.0479999999998" y="607.96" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-42" value="localStorage" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="361.98" y="630" width="120" height="80" as="geometry" />
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-42" value="localStorage" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="386" y="937" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-46" value="&lt;b&gt;undefined&lt;/b&gt;: &lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;У пользователя не выбран город в настройках&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;или пользователь ещё не загрузился&lt;/font&gt;&lt;/i&gt;&lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;br&gt;и пользователь никогда не выбирал город&amp;nbsp;&lt;br&gt;(&lt;font color=&quot;#ff0505&quot;&gt;Ошибка если не сработает watcher&lt;/font&gt;)&lt;br&gt;&lt;/font&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-46" value="&lt;b&gt;undefined&lt;/b&gt;: &lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;У пользователя не выбран город в настройках&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;или пользователь ещё не загрузился&lt;/font&gt;&lt;/i&gt;&lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;br&gt;и пользователь никогда не выбирал город&amp;nbsp;&lt;br&gt;(&lt;font color=&quot;#ff0505&quot;&gt;Ошибка если не сработает watcher&lt;/font&gt;)&lt;br&gt;&lt;/font&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="495" width="160" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-48" value="&lt;b&gt;id&lt;/b&gt;: &lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;У пользователя выбран город в настройках или пользователь выбирал город&lt;/font&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-48" value="&lt;b&gt;id&lt;/b&gt;: &lt;i&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;У пользователя выбран город в настройках или пользователь выбирал город&lt;/font&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="600" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-51" value="Предпочтение у cityId" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-51" value="Предпочтение у cityId" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="160" y="670" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-52" value="" style="endArrow=classic;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="G7fBXbVgxk_kWN4zUxZF-39">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-52" value="" style="endArrow=classic;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" target="G7fBXbVgxk_kWN4zUxZF-39" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="490" y="610" as="sourcePoint" />
             <mxPoint x="400" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-53" value="server" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-53" value="server" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="452" y="595" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-54" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-54" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" parent="1" vertex="1">
           <mxGeometry x="306" y="505" width="44" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-56" value="Вотчер может не сработать если в переменную положить одно и тоже значение или переопределить его" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-72" y="675" width="170" height="20" as="geometry" />
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-56" value="Вотчер может не сработать если в переменную положить одно и тоже значение или переопределить его" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="-72" y="652.5" width="170" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-57" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-57" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="70" y="650" as="sourcePoint" />
             <mxPoint x="160" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-58" value="" style="endArrow=classic;html=1;fontSize=10;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-25" target="G7fBXbVgxk_kWN4zUxZF-39">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-58" value="" style="endArrow=classic;html=1;fontSize=10;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="G7fBXbVgxk_kWN4zUxZF-25" target="G7fBXbVgxk_kWN4zUxZF-39" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="570" y="460" as="sourcePoint" />
             <mxPoint x="620" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-59" value="Может попасть:&lt;br&gt;&lt;b style=&quot;font-size: 12px&quot;&gt;undefined &lt;/b&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;или&lt;/font&gt;&lt;b style=&quot;font-size: 12px&quot;&gt; id&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-59" value="Может попасть:&lt;br&gt;&lt;b style=&quot;font-size: 12px&quot;&gt;undefined &lt;/b&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;или&lt;/font&gt;&lt;b style=&quot;font-size: 12px&quot;&gt; id&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
           <mxGeometry x="554.5" y="450" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-63" value="Инициализация приложения" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;double=1;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-63" value="Инициализация приложения" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;double=1;fontSize=10;" parent="1" vertex="1">
           <mxGeometry x="-40" y="800" width="97" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-64" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-63">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-64" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="G7fBXbVgxk_kWN4zUxZF-63" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="120" y="870" as="sourcePoint" />
             <mxPoint x="120" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-65" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-63">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-65" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="G7fBXbVgxk_kWN4zUxZF-63" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="61.5" y="860" as="sourcePoint" />
             <mxPoint x="120" y="880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-66" value="localStorage" style="triangle;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="120" y="750" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-67" value="server" style="triangle;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="120" y="850" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-68" value="Данные поступают в VUEX" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-68" value="Данные поступают в VUEX" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
           <mxGeometry x="40" y="780" width="80" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-70" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-66">
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-80" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" parent="1" vertex="1">
+          <mxGeometry x="330" y="1017" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CHKYId3VDMZ3tz6TOn7Y-36">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="240" y="780" as="sourcePoint" />
-            <mxPoint x="250" y="790" as="targetPoint" />
+            <mxPoint x="550.98" y="260" as="sourcePoint" />
+            <mxPoint x="604" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-71" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-67">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="240" y="780" as="sourcePoint" />
-            <mxPoint x="250" y="890" as="targetPoint" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-2" value="Проверил,&lt;br&gt;ошибка не возникает" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="572" y="235" width="64" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" vertex="1" parent="1">
+          <mxGeometry x="629.5" y="247" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_h8ZHte26619VJgfa5wt-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-72" value="Переменная city_id содержит 100% тоже что и форма для выбора города" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="230" y="750" width="164" height="60" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-5" value="&lt;span style=&quot;color: rgb(212 , 212 , 212) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(30 , 30 , 30) ; display: inline ; float: none&quot;&gt;price_id&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="170" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-73" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 10px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;мгновенно&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="145" y="810" width="70" height="30" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-11" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="_h8ZHte26619VJgfa5wt-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="336.13" y="240" as="sourcePoint" />
+            <mxPoint x="386.13" y="190" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-74" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;font face=&quot;helvetica&quot;&gt;нужно,&lt;br&gt;время&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="150" y="910" width="70" height="30" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-15" value="Другая ошибка" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="120" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-75" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" vertex="1" parent="1">
-          <mxGeometry x="370" y="780" width="40" height="40" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-16" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" vertex="1" parent="1">
+          <mxGeometry x="260" y="110" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-76" value="В теории при медленном интернете и когда пользователь не добавлен в localStorage, но город выбран!. Кстати при регистрации может город автоматически выбраться???&lt;br&gt;&lt;br&gt;Переменная city_id может прийти undefined в mounted().&amp;nbsp;&lt;br&gt;Она вызовет watcher чтобы поставить cityId в vuex на undefined. &lt;br&gt;И только после этого придет ответ с сервера и объект настроек пользователя. Где существует город. Форма поменяется на это значение, так как cityId undefined и прочтется город выбранный в настройках пользователя ." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="242.98" y="830" width="358" height="130" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-17" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" vertex="1" parent="1">
+          <mxGeometry x="590" y="577" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-77" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/new-year-s-hand-drawn-basic/64/question_mark-128.png;rotation=25;" vertex="1" parent="1">
-          <mxGeometry x="77" y="646" width="68" height="68" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-18" value="- тупик" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620.98" y="587" width="59.02" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-78" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
-          <mxGeometry x="572" y="860" width="44" height="44" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-19" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="588.5" y="620" width="44" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-79" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
-          <mxGeometry x="582" y="870" width="44" height="44" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-20" value="- наиболее вероятное направление поиска" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="606.5" y="638" width="174.52" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="G7fBXbVgxk_kWN4zUxZF-80" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
-          <mxGeometry x="592" y="880" width="44" height="44" as="geometry" />
+        <mxCell id="_h8ZHte26619VJgfa5wt-21" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="-116" y="595" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-22" value="" style="endArrow=classic;html=1;exitX=0.419;exitY=0.945;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="404.9839999999999" y="608.9499999999998" as="sourcePoint" />
+            <mxPoint x="404" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-26" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G7fBXbVgxk_kWN4zUxZF-63" target="_h8ZHte26619VJgfa5wt-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="840" as="sourcePoint" />
+            <mxPoint x="120" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-32" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_h8ZHte26619VJgfa5wt-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="890" as="sourcePoint" />
+            <mxPoint x="247.5" y="842.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-34" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="_h8ZHte26619VJgfa5wt-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="805" as="sourcePoint" />
+            <mxPoint x="400" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-37" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/super-mono-reflection/blue/question-balloon_blue.png;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-136" y="553" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-38" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" vertex="1" parent="1">
+          <mxGeometry x="70" y="690" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-42" value="&lt;span style=&quot;font-size: 12px&quot;&gt;не сработал плагин,&lt;/span&gt;&lt;br style=&quot;font-size: 12px&quot;&gt;&lt;div style=&quot;color: rgb(171 , 178 , 191) ; background-color: rgb(40 , 44 , 52) ; font-family: &amp;#34;droid sans mono&amp;#34; , monospace , monospace , &amp;#34;droid sans fallback&amp;#34; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;span style=&quot;color: rgb(152 , 195 , 121) ; font-size: 8px&quot;&gt;vuex-persistedstate&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#000000;fillColor=#ffffff;gradientColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="860" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-48" value="&lt;span&gt;localStorage существует и в нем актуальные данные&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;fillColor=#ffffff;gradientColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="746" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="G7fBXbVgxk_kWN4zUxZF-75" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" parent="1" vertex="1">
+          <mxGeometry x="180" y="732" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-49" value="&lt;span&gt;localStorage существует и но данные не актуальны&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;fillColor=#ffffff;gradientColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="845" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-50" value="&lt;span&gt;localStorage пуст&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;fillColor=#ffffff;gradientColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="950" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-51" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="180" y="826" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-52" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/close.png" vertex="1" parent="1">
+          <mxGeometry x="336.13" y="895" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-53" value="(Маловероятный исход)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="840" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-55" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="176" y="940" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-56" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="_h8ZHte26619VJgfa5wt-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="1002" as="sourcePoint" />
+            <mxPoint x="240" y="995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-57" value="" style="endArrow=classic;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="_h8ZHte26619VJgfa5wt-50" target="_h8ZHte26619VJgfa5wt-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="1005" as="sourcePoint" />
+            <mxPoint x="290" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-60" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="340" y="1027" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-61" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="350" y="1037" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-62" value="" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=none;fontSize=10;fillColor=none;strokeColor=#FF0505;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="220" y="820" width="170" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-63" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#FF2A00;strokeWidth=3;" edge="1" parent="1" source="_h8ZHte26619VJgfa5wt-62" target="_h8ZHte26619VJgfa5wt-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="790" as="sourcePoint" />
+            <mxPoint x="490" y="740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-105" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-64" value="Решение, поправить ошибку" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF7105;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-98" y="1051" width="322" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-65" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="-106" y="605" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-66" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/app_iconset_creative_nerds/64/tick.png" vertex="1" parent="1">
+          <mxGeometry x="-96" y="615" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-68" value="&lt;h1 style=&quot;font-size: 16px&quot;&gt;Алгоритм действий, чтобы поймать ошибку:&lt;/h1&gt;&lt;p style=&quot;font-size: 16px&quot;&gt;1. Создать аккаунт.&lt;br&gt;2. В настройках установить город.&lt;br&gt;3. Зайти с другого устройства, браузера - на котором вы ни разу не входили на sektaschool.ru. Либо очистить localStorage браузера. Входить необходимо сразу на странице с формой.&amp;nbsp;&lt;br&gt;4. Попытаться, ввести форму.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;fontColor=#0000FF;" vertex="1" parent="1">
+          <mxGeometry x="506" y="860" width="295" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="_h8ZHte26619VJgfa5wt-69" value="Что происходит?!&amp;nbsp;&lt;br style=&quot;font-size: 10px&quot;&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;Переменная city_id может прийти undefined в mounted().&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;font-size: 10px&quot;&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;Она вызовет watcher чтобы поставить cityId в vuex на undefined.&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;font-size: 10px&quot;&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;И только после этого придет ответ с сервера и объект настроек пользователя. Где существует город. Форма поменяется на это значение, так как cityId undefined и прочтется город выбранный в настройках пользователя .&lt;/span&gt;&lt;br&gt;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="500" y="690" width="278" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
