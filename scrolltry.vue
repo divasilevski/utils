@@ -11,8 +11,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// nuxt-link(:to="`#${key}`")
-
 export default Vue.extend({
   props: {
     options: {
@@ -23,16 +21,15 @@ export default Vue.extend({
   data() {
     return {
       fixed: false,
-      active: Object.keys(this.options)[0],
+      active: '',
     }
   },
   mounted() {
     const $stickyBar = this.$el as HTMLElement
     const offsetTop = $stickyBar.offsetTop
 
-    window.onhashchange = function (e: any) {
-      e.preventDefault()
-    }
+    this.active = this.$route.hash.slice(1, this.$route.hash.length - 1)
+    this.scrollTo(`#${this.active}`)
 
     window.onscroll = () => {
       if (window.pageYOffset >= offsetTop) {
@@ -40,24 +37,27 @@ export default Vue.extend({
       } else {
         $stickyBar.classList.remove('fixed')
       }
-
       let fromTop = window.pageYOffset || document.documentElement.scrollTop
-
       Object.keys(this.options).forEach((key) => {
         let section = document.querySelector(`#${key}`) as HTMLElement
-        // if (key === 'certificates')
-        // console.log(fromTop, section.offsetTop - 150)
-        // console.log(section.offsetTop - 150 - fromTop)
-        if (document) {
-          console.log(fromTop, document.documentElement.scrollHeight)
-        }
         if (
+          document.documentElement.scrollHeight -
+            fromTop -
+            document.documentElement.clientHeight <
+          50
+        ) {
+          if (location.hash !== `#insta`) {
+            history.replaceState({}, '', `#insta`)
+            this.active = 'insta'
+          }
+        } else if (
           section.offsetTop - 150 <= fromTop &&
           section.offsetTop - 150 + section.offsetHeight > fromTop
         ) {
-          this.active = key
-          // window.location.hash = `#${key}`
-          // this.$router.push(`#${key}`)
+          if (location.hash !== `#${key}`) {
+            this.active = key
+            history.replaceState({}, '', `#${key}`)
+          }
         }
       })
     }
@@ -67,6 +67,7 @@ export default Vue.extend({
       const $el = document.querySelector(hash) as HTMLElement
       if ($el) {
         window.scrollTo({ top: $el.offsetTop - 100, behavior: 'smooth' })
+        // history.pushState({}, '', hash)
       }
     },
   },
@@ -83,7 +84,6 @@ export default Vue.extend({
   align-items: center;
   margin: 8px 0;
   z-index: 18;
-
   &.fixed {
     position: fixed;
     margin: 0;
@@ -94,29 +94,23 @@ export default Vue.extend({
     justify-content: center;
     align-items: flex-start;
     background: linear-gradient(180deg, #ffffff 50%, transparent 100%);
-
     .sticky-bar__item {
       margin-top: 22px;
     }
   }
-
   .sticky-bar__item {
     position: relative;
     cursor: pointer;
     z-index: 19;
-
     &:not(:last-child) {
       margin-right: 40px;
     }
-
     a {
       text-decoration: none;
       color: var(--color);
     }
-
     &.active {
       font-weight: bold;
-
       &::after {
         content: '';
         z-index: -1;
@@ -131,5 +125,11 @@ export default Vue.extend({
       }
     }
   }
+}
+
+section {
+  border-top: 100px solid transparent;
+  margin-top: -100px;
+  background-clip: padding-box;
 }
 </style>
