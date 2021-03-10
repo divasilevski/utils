@@ -40,6 +40,7 @@ export default Vue.extend({
   computed: {
     classList(): object {
       return {
+        active: this.$slots.default,
         invert: this.isInvert,
         white: this.isWhite,
         metro: this.isMetro,
@@ -52,17 +53,17 @@ export default Vue.extend({
   },
   methods: {
     hover() {
-      this.$nextTick(() => {
-        const $el = this.$refs.content as HTMLElement
-        const width = document.documentElement.offsetWidth
-        const rect = $el.getBoundingClientRect()
+      if (!this.$slots.default) return
 
-        if (rect.left < 0) {
-          this.shift = -this.shift + rect.left + 30
-        } else if (rect.right > width) {
-          this.shift = this.shift - (rect.right - width) - 15
-        }
-      })
+      const $el = this.$refs.content as HTMLElement
+      const width = document.documentElement.offsetWidth
+      const rect = $el.getBoundingClientRect()
+
+      if (rect.left < 0) {
+        this.shift = -this.shift + rect.left + 30
+      } else if (rect.right > width) {
+        this.shift = this.shift - (rect.right - width) - 15
+      }
     },
   },
 })
@@ -80,7 +81,8 @@ $zIndex: 200;
   width: 100%;
   height: 22px;
 
-  &:hover {
+  &.active:hover {
+    cursor: pointer;
     .hint__tip,
     .hint__content {
       display: block;
@@ -169,7 +171,6 @@ $zIndex: 200;
     background: var(--bg);
     border-radius: 50%;
     opacity: 0.1;
-    cursor: pointer;
   }
 
   .hint__icon {
