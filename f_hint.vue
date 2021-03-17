@@ -1,15 +1,19 @@
 <template lang="pug">
-  .hint(:class="classList" @mouseover="over" @mouseout="out" @touchstart="toggle")
-    .hint__icon.text-16 {{ iconType }}
+.hint(
+  :class='classList'
+  @mouseenter="onMouseenter"
+  @mouseleave="open = false"
+  @touchstart="open = !open"
+)
+  .hint__icon.text-16 {{ iconType }}
 
-    template(v-if="$slots.default")
-      .hint__content(ref="content" :style="`left: ${shift}px;`")
-        .text-14
-          slot
-      .hint__tip
-        .hint__arrow
-        .hint__relief
-
+  template(v-if='$slots.default')
+    .hint__content(ref='content', :style='`left: ${left}px;`')
+      .text-14
+        slot
+    .hint__tip
+      .hint__arrow
+      .hint__relief
 </template>
 
 <script lang="ts">
@@ -34,7 +38,7 @@ export default Vue.extend({
     },
   },
   data() {
-    return { shift: 0, open: false }
+    return { left: 0, open: false }
   },
   computed: {
     classList(): object {
@@ -51,29 +55,24 @@ export default Vue.extend({
       return this.isInfo ? '!' : this.isMetro ? 'M' : 'i'
     },
   },
+  mounted(){
+    this.leftCalc()
+  },
   methods: {
-    over() {
-      if (!this.$slots.default) return
+    leftCalc() {
+      if (!this.$slots.default && !window) return
       const $el = this.$refs.content as HTMLElement
       const width = document.documentElement.offsetWidth
       const rect = $el.getBoundingClientRect()
       if (rect.left < 0) {
-        this.shift = -this.shift + rect.left + 30
+        this.left = this.left - rect.left + 15
       } else if (rect.right > width) {
-        this.shift = this.shift - (rect.right - width) - 15
+        this.left = this.left - (rect.right - width) - 15
       }
-
+    },
+    onMouseenter() {
+      this.leftCalc()
       this.open = true
-    },
-    out() {
-      this.open = false
-    },
-    toggle(e: any) {
-      if (this.open) {
-        this.open = false
-      } else {
-        this.open = true
-      }
     },
   },
 })
@@ -92,11 +91,12 @@ $zIndex: 200;
   pointer-events: none;
   &.active {
     pointer-events: unset;
+
     &.open {
       cursor: pointer;
       .hint__tip,
       .hint__content {
-        display: block;
+        visibility: visible;
       }
       .hint__icon {
         color: var(--color-secondary);
@@ -109,12 +109,13 @@ $zIndex: 200;
   }
   .hint__tip,
   .hint__content {
-    display: none;
+    visibility: hidden;
   }
   .hint__content {
     position: absolute;
     color: var(--color);
     bottom: 42px;
+    left: 0;
     max-width: 340px;
     transform: translateX(-50%);
     width: calc(100vw - 60px);
