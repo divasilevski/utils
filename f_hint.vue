@@ -2,8 +2,8 @@
 .hint(
   :class='classList'
   @mouseenter="onMouseenter"
-  @mouseleave="open = false"
-  @touchstart="open = !open"
+  @mouseleave="onMouseleave"
+  @touchstart="onTouchstart"
 )
   .hint__icon.text-16 {{ iconType }}
 
@@ -55,25 +55,36 @@ export default Vue.extend({
       return this.isInfo ? '!' : this.isMetro ? 'M' : 'i'
     },
   },
-  mounted(){
-    this.leftCalc()
-  },
   methods: {
     leftCalc() {
       if (!this.$slots.default && !window) return
-      const $el = this.$refs.content as HTMLElement
+
       const width = document.documentElement.offsetWidth
-      const rect = $el.getBoundingClientRect()
-      if (rect.left < 0) {
-        this.left = this.left - rect.left + 15
-      } else if (rect.right > width) {
-        this.left = this.left - (rect.right - width) - 15
+      const contentWidth = width - 30 < 340 ? width - 30 : 340
+      const hintPosition = this.$el.getBoundingClientRect().left
+      
+      const deltaLeft = hintPosition - contentWidth / 2
+      const deltaRight = hintPosition + contentWidth / 2
+
+      if (deltaLeft < 0) {
+        this.left = - deltaLeft + 15
+      } else if (deltaRight > width) {
+        this.left = - (deltaRight - width) - 15
+      } else {
+        this.left = 0
       }
     },
     onMouseenter() {
       this.leftCalc()
       this.open = true
     },
+    onMouseleave() {
+      this.open = false
+    },
+    onTouchstart() {
+      if (!this.open) this.leftCalc()
+      this.open = !this.open
+    }
   },
 })
 </script>
@@ -96,7 +107,7 @@ $zIndex: 200;
       cursor: pointer;
       .hint__tip,
       .hint__content {
-        visibility: visible;
+        display: block;
       }
       .hint__icon {
         color: var(--color-secondary);
@@ -109,7 +120,7 @@ $zIndex: 200;
   }
   .hint__tip,
   .hint__content {
-    visibility: hidden;
+    display: none;
   }
   .hint__content {
     position: absolute;
