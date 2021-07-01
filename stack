@@ -1,0 +1,153 @@
+import * as React from 'react';
+import { View, StyleSheet, FlatList, Animated } from 'react-native';
+import { Quiz } from '../../assets/types/quiz.types';
+import WithShadow from '../../hocs/withShadow';
+import CustomButton from '../UI/Button';
+import { QuizQuestion } from './QuizQuestion';
+
+interface QuizStackProps {
+  position: number;
+  results: number[];
+  quiz: Quiz[];
+  onNext: () => void;
+  resultsChanged: (optionId: number) => void;
+}
+
+const WIDTH = 350;
+const HEIGHT = 450;
+
+export const QuizStack = (props: QuizStackProps) => {
+  const scrollXIndex = React.useRef(new Animated.Value(0)).current;
+  const scrollXAnimated = React.useRef(new Animated.Value(0)).current;
+  const { position, onNext, resultsChanged, quiz, results } = props;
+  // const buttonTitle =
+  //   position === quiz.length
+  //     ? 'Готово!'
+  //     : !position
+  //     ? 'Ответить на вопросы'
+  //     : 'Далее';
+
+  React.useEffect(() => {
+    Animated.spring(scrollXAnimated, {
+      toValue: scrollXIndex,
+      useNativeDriver: true,
+    }).start();
+
+    // setInterval(() => {
+    //   scrollXIndex.setValue(Math.floor(Math.random() * quiz.length));
+    // }, 3000);
+  }, []);
+
+  React.useEffect(() => {
+    console.log(position);
+    scrollXIndex.setValue(position);
+  }, [position]);
+
+  return (
+    <View style={styles.stack}>
+      <FlatList
+        data={quiz}
+        keyExtractor={(_, index) => 'stack-' + index}
+        horizontal
+        inverted
+        scrollEnabled={false}
+        removeClippedSubviews={false}
+        contentContainerStyle={styles.container}
+        CellRendererComponent={({ item, index, children, style, ...props }) => {
+          const newStyle = [
+            style,
+            { zIndex: index === position ? 100 : quiz.length - index },
+            styles.cell,
+          ];
+          return (
+            <View style={newStyle} index={index} {...props}>
+              {children}
+            </View>
+          );
+        }}
+        renderItem={({ item, index }) => {
+          const inputRange = [index - 1, index, index + 1];
+          const translateY = scrollXAnimated.interpolate({
+            inputRange,
+            outputRange: [-24, 0, 100],
+          });
+          const scale = scrollXAnimated.interpolate({
+            inputRange,
+            outputRange: [0.95, 1, 1.3],
+          });
+          const opacity = scrollXAnimated.interpolate({
+            inputRange,
+            outputRange: [1 - 1 / 3, 1, 0],
+          });
+          return (
+            <Animated.View
+              style={{
+                ...styles.item,
+                opacity,
+                transform: [{ translateY }, { scale }],
+              }}
+            >
+              <WithShadow style={styles.itemShadow}>
+                <QuizQuestion
+                  result={results[position - 1]}
+                  question={item}
+                  resultsChanged={resultsChanged}
+                />
+                <CustomButton
+                  title={'Далее'}
+                  onPress={onNext}
+                  disabled={!!position && results[position - 1] === undefined}
+                  black
+                />
+              </WithShadow>
+            </Animated.View>
+          );
+        }}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  stack: {
+    flex: 1,
+    backgroundColor: 'red',
+    // position: 'relative',
+    // marginTop: 40,
+    // marginBottom: 16,
+    // backgroundColor: 'red',
+  },
+  cell: {
+    // backgroundColor: 'blue',
+    position: 'absolute',
+    bottom: 0,
+    top: 50,
+    left: 0,
+    // left: WIDTH / 2,
+    right: 0,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: 'purple',
+    justifyContent: 'center',
+    // paddingTop: 50,
+  },
+  item: {
+    flex: 1,
+    position: 'absolute',
+    backgroundColor: 'white',
+    // left: -WIDTH / 2,
+    width: WIDTH,
+    height: HEIGHT,
+
+    // borderColor: 'black',
+    // borderWidth: 1,
+  },
+  itemShadow: {
+    flex: 1,
+    justifyContent: 'space-between',
+    paddingTop: 16,
+    paddingHorizontal: 24,
+    paddingBottom: 24,
+  },
+});
